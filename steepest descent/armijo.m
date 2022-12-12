@@ -77,7 +77,6 @@ for i=1:length(x0)
             Y(k+1) = temp(2);
         end 
         %%
-        gamma
 
         k = k+1;
         

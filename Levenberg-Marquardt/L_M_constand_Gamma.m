@@ -28,6 +28,8 @@ grad = gradient(f,[x,y]); % gradient calculation
 grad_2 = jacobian(grad); %jacobian of gradient
     
 for i=1:length(x0)
+    disp(['initial point: ', num2str(x0(i)),',',num2str(y0(i))]);
+
     X=[];
     Y=[];
     k=1;
@@ -58,6 +60,8 @@ for i=1:length(x0)
         Y(k+1) = temp(2);
         k = k+1; 
     end
+    disp(['iterations: ',num2str(k-1)]);
+
     hold off
 
 end
